@@ -1,6 +1,6 @@
 <?php
 // Abre uma conexão com o banco de dados
-$db = new SQLite3('C:\xampp\htdocs\Projeto Estacionamento\sqlite3\veiculos.db');
+$db = new SQLite3(__DIR__ . '/../sqlite3/veiculos.db');
 
 // Verifica se a conexão foi bem-sucedida
 if(!$db) {

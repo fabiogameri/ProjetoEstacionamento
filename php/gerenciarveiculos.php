@@ -1,6 +1,6 @@
 <?php
 // Conexão com o banco de dados SQLite
-$db = new SQLite3('C:\xampp\htdocs\Projeto Estacionamento\sqlite3\veiculos.db');
+$db = new SQLite3(__DIR__ . '/../sqlite3/veiculos.db');
 
 // Função para excluir um veículo
 if (isset($_GET['delete_id'])) {
@@ -40,6 +40,7 @@ $result = $db->query("SELECT * FROM veiculos");
     <meta charset="UTF-8">
     <title>Gerenciar Veículos</title>
     <link rel="stylesheet" href="../css/style_gerenciar.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
     <script>
         // Função para exibir ou ocultar o formulário de edição
         function toggleEditForm(id) {

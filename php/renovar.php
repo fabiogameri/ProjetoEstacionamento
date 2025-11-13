@@ -2,9 +2,9 @@
 require 'conexaodb.php';
 
 $id = $_POST['id'];
-$dataRenovacao = date('d-m-Y'); // Data atual
+$dataRenovacao = date('Y-m-d');
 
-$db = new SQLite3('C:\xampp\htdocs\Projeto Estacionamento\sqlite3\veiculos.db');
+$db = new SQLite3(__DIR__ . '/../sqlite3/veiculos.db');
 $sql = "UPDATE veiculos SET pago = 1, data_renovacao = :dataRenovacao WHERE id = :id";
 $stmt = $db->prepare($sql);
 $stmt->bindValue(':id', $id, SQLITE3_INTEGER);
