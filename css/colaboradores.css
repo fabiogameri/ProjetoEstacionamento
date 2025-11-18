@@ -1,0 +1,88 @@
+/* ======== ESTILO GERAL DA PÁGINA ======== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ======== CONTEÚDO PRINCIPAL ======== */
+
+.colaboradores-container {
+    text-align: center;
+    padding: 40px 20px;
+    flex: 1;
+}
+
+.colaboradores-container h1 {
+    margin-bottom: 30px;
+}
+
+/* ======== GRID DOS COLABORADORES ======== */
+
+.colaboradores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ======== CARD ======== */
+
+.colaborador-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.colaborador-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.colaborador-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.colaborador-card h3 {
+    margin: 10px 0 5px;
+}
+
+.colaborador-card p {
+    color: #555;
+    margin: 0;
+}
+
+/* ======== FOOTER ======== */
+
+footer {
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    margin-top: auto;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #2f72c0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
