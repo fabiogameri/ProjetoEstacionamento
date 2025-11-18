@@ -171,3 +171,26 @@ button {
 button:hover {
     background-color: #2f72c0;
 }
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+/* Estilo do link */
+.link-colab {
+    color: #2f72c0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover substituindo onmouseover/onmouseout */
+.link-colab:hover {
+    color: #2f72c0;
+}

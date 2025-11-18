@@ -29,7 +29,7 @@ h1 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #2f72c0;
 }
 
 /* Lista de veículos */
@@ -94,7 +94,7 @@ h1 {
 /* Estilo para os botões de ação */
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #2f72c0;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -105,7 +105,7 @@ button {
 
 /* Hover nos botões */
 button:hover {
-    background-color: #0056b3;
+    background-color: #2f72c0;
 }
 
 /* Botão de voltar */
